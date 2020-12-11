@@ -21,7 +21,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>分类：分类B - Hexo</title>
+  <title>分类：PHP - Hexo</title>
   
 
   
@@ -414,7 +414,7 @@ Qu...
         <time>2020-12-11</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%88%86%E7%B1%BBA/">分类A</a><span class="sep"></span><a class="category-link" href="/categories/%E5%88%86%E7%B1%BBA/%E5%88%86%E7%B1%BBB/">分类B</a>
+          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/">PHP</a>
         
       </div>
       
@@ -522,14 +522,14 @@ Qu...
       <ul class="entry navigation">
         
           <li><a class="flat-box"
-            title="/categories/%E5%88%86%E7%B1%BBA/" href="/categories/%E5%88%86%E7%B1%BBA/"
-            id="categoriesE58886E7B1BBA"
-            ><div class='name'>分类A</div><div class='badge'>(1)</div></a></li>
+            title="/categories/%E5%90%8E%E7%AB%AF/" href="/categories/%E5%90%8E%E7%AB%AF/"
+            id="categoriesE5908EE7ABAF"
+            ><div class='name'>后端</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box child"
-            title="/categories/%E5%88%86%E7%B1%BBA/%E5%88%86%E7%B1%BBB/" href="/categories/%E5%88%86%E7%B1%BBA/%E5%88%86%E7%B1%BBB/"
-            id="categoriesE58886E7B1BBAE58886E7B1BBB"
-            ><div class='name'>分类B</div><div class='badge'>(1)</div></a></li>
+            title="/categories/%E5%90%8E%E7%AB%AF/PHP/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/"
+            id="categoriesE5908EE7ABAFPHP"
+            ><div class='name'>PHP</div><div class='badge'>(1)</div></a></li>
         
       </ul>
     </div>
@@ -823,10 +823,46 @@ var loadCSS = function( href, before, media, attributes ){
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script type="text/javascript">
-  function pjax_gitalk() {
-    if(!document.querySelectorAll("#gitalk-container")[0])return;
+  
+  
+<script src="/js/valine.js"></script>
+
+
+<script>
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link'.split(',').filter(function (item) {
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick', 'mail', 'link'];
+  var requiredFields = 'nick,mail'.split(',').filter(function (item) {
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+
+  function emoji(path, idx, ext) {
+    return path + "/" + path + "-" + idx + "." + ext;
+  }
+
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+
+  function pjax_valine() {
+    if(!document.querySelectorAll("#valine_container")[0])return;
+
+    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~";
 
     let path = pdata.commentPath;
     if (path.length == 0) {
@@ -834,22 +870,30 @@ var loadCSS = function( href, before, media, attributes ){
       path = defaultPath || decodeURI(window.location.pathname);
     }
 
-    if (document.getElementById('gitalk-container') != null) {
-      var gitalk = new Gitalk({
-        clientID: "51bbe2df98f7a794bbae",
-        clientSecret: "9966283519c70c686ddf4157aa86e3fa09dfe75d",
-        repo: "zmxy_repo",
-        owner: "Chenilove",
-        admin: "Chenilove",
-        id: path,
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      });
-      gitalk.render('gitalk-container');
-    }
+    var valine = new Valine();
+    valine.init({
+      el: '#valine_container',
+      meta: meta,
+      placeholder: pagePlaceholder,
+      path: path,
+      appId: "8T4tXzHerfQQkkYWDwpbIfmo-gzGzoHsz",
+      appKey: "Fonyv1fqbmg3Wqyn6azxhBSW",
+      pageSize: '10',
+      avatar: 'robohash',
+      lang: 'zh-cn',
+      visitor: 'true',
+      highlight: 'true',
+      mathJax: 'false',
+      enableQQ: 'true',
+      recordIP: 'false',
+      requiredFields: requiredFields,
+      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
+      emojiMaps: emojiMaps
+    })
   }
 
   $(function () {
-    pjax_gitalk();
+    pjax_valine();
   });
 </script>
 
@@ -1285,9 +1329,9 @@ document.addEventListener("pjax:success", listennSidebarTOC);
         
         
         
+          pjax_valine();
         
         
-          pjax_gitalk();
         
         
       } catch (e) {
