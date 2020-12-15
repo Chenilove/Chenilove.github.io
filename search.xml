@@ -5,8 +5,8 @@
     
     <entry>
       <title>Linux CentOS升级安装git</title>
-      <link href="2020/12/14/Linux%20CentOS%E5%8D%87%E7%BA%A7%E5%AE%89%E8%A3%85git%20/"/>
-      <url>2020/12/14/Linux%20CentOS%E5%8D%87%E7%BA%A7%E5%AE%89%E8%A3%85git%20/</url>
+      <link href="2020/12/14/LinuxCentOS%E5%8D%87%E7%BA%A7%E5%AE%89%E8%A3%85git%20/"/>
+      <url>2020/12/14/LinuxCentOS%E5%8D%87%E7%BA%A7%E5%AE%89%E8%A3%85git%20/</url>
       
         <content type="html"><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>CentOS默认的yum安装git版本是1.8，但我们想升级它，需要自己去编译安装</p><h4 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h4><ul><li>首先安装依赖<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum install gcc</span><br><span class="line">yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel</span><br><span class="line">yum install gcc perl-ExtUtils-MakeMaker</span><br></pre></td></tr></table></figure></li></ul><h4 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h4><ul><li><p>前往<a href="https://mirrors.edge.kernel.org/pub/software/scm/git/">镜像网站</a>手动去下载git，或者我们可以用wget下载目前最新的2.9.5</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.9.5.tar.gz</span><br></pre></td></tr></table></figure></li><li><p>解压</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxf git-2.9.5.tar.gz</span><br></pre></td></tr></table></figure></li><li><p>进入目录</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd git-2.9.5</span><br></pre></td></tr></table></figure></li><li><p>配置检测，并且设置安装目录</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./configure --prefix=/usr/local/git</span><br></pre></td></tr></table></figure></li><li><p>编译安装</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure></li></ul><h4 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h4><p>我们需要配置环境变量才能全局使用git命令</p><ul><li>在profile里配置环境变量<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;export PATH=$PATH:/usr/local/git/bin&#x27; &gt; /etc/profile.d/git.sh</span><br></pre></td></tr></table></figure></li><li>刷新环境变量，使其生效<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>OK<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@VM-0-11-centos git-2.9.5]# git --version</span><br><span class="line">git version 2.9.5</span><br></pre></td></tr></table></figure></li></ul>]]></content>
       
@@ -14,6 +14,8 @@
       <categories>
           
           <category> 服务器 </category>
+          
+          <category> Linux </category>
           
           <category> git </category>
           
