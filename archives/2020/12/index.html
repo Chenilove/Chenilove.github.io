@@ -309,7 +309,7 @@
     <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="half" class='cover-wrapper  featured' style="display: ;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg"></div>
           
@@ -381,6 +381,10 @@
         
           
         
+          
+        
+          
+        
       
     
     
@@ -391,27 +395,116 @@
   
   
   
+    <div class='headimg-div'>
+      <a class='headimg-a' href="/2020/12/14/Linux%20CentOS%E5%8D%87%E7%BA%A7%E5%AE%89%E8%A3%85git%20/">
+        <img class='headimg' src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4103132287,237724689&fm=26&gp=0.jpg'/>
+      </a>
+    </div>
+  
   
     
     <h2 class="article-title" >
-      <a href="/2020/12/11/ceshi/">
-        ceshi
+      <a href="/2020/12/14/Linux%20CentOS%E5%8D%87%E7%BA%A7%E5%AE%89%E8%A3%85git%20/">
+        Linux CentOS升级安装git
       </a>
     </h2>
   
   <div class='md'>
+    
+      
+        前言CentOS默认的yum安装git版本是1.8，但我们想升级它，需要自己去编译安装
+环境
+首先安装依赖123yum install gccyum install curl-devel expat-devel gettext-devel openssl-devel zlib-develyum install gcc perl-ExtUtils-MakeMaker
+
+
+
+下载安装
+前往镜像网...
+      
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time>2020-12-11</time>
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-12-14</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><span class="sep"></span><a class="category-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/git/">git</a>
         
       </div>
       
         <div>
-          <a class='readmore' href='/2020/12/11/ceshi/'>
+          <a class='readmore' href='/2020/12/14/Linux%20CentOS%E5%8D%87%E7%BA%A7%E5%AE%89%E8%A3%85git%20/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+    <div class='headimg-div'>
+      <a class='headimg-a' href="/2020/12/11/Hexo%E9%83%A8%E7%BD%B2GitHub-Pages/">
+        <img class='headimg' src='https://i.loli.net/2020/12/15/CBjwueKp3oFsyZX.jpg'/>
+      </a>
+    </div>
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/12/11/Hexo%E9%83%A8%E7%BD%B2GitHub-Pages/">
+        Hexo部署GitHub Pages
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        环境要求
+node.js  &gt; 10.13
+git
+Hexo
+默认你知道Hexo的使用方法
+
+创建一个仓库(repository)
+进入GitHub，右上角点击  New repository
+
+将Repository name设置成   你的用户名.github.io ，注意，用户名必须跟你的一模一样
+
+复制GitHub连接 git@github.com:Chenilove/Chen...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-12-11</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/Hexo/">Hexo</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2020/12/11/Hexo%E9%83%A8%E7%BD%B2GitHub-Pages/'>
             阅读全文
           </a>
         </div>
@@ -433,16 +526,16 @@
   
     
     <h2 class="article-title" >
-      <a href="/2020/12/11/hello-world/">
-        Hello World
+      <a href="/2020/12/04/Linux%E5%85%B3%E9%97%ADwatchdog/">
+        Linux关闭watchdog
       </a>
     </h2>
   
   <div class='md'>
     
       
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
+        sysctl命令控制1234567# 使用该命令直接关闭，值改为1时开启sysctl kernel.nmi_watchdog=0# 在/etc/sysctl.conf中增加如下内容，开机自动关闭kernel.nmi_watchdog = 0
+
       
     
   </div>
@@ -450,15 +543,73 @@ Qu...
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time>2020-12-11</time>
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-12-04</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/">PHP</a>
+          <a class="category-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><span class="sep"></span><a class="category-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/">Linux</a>
         
       </div>
       
         <div>
-          <a class='readmore' href='/2020/12/11/hello-world/'>
+          <a class='readmore' href='/2020/12/04/Linux%E5%85%B3%E9%97%ADwatchdog/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/12/04/MySQL%20SELECT%20list%20is%20not%20in...MySQL%E5%85%B3%E9%97%AD%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/">
+        MySQL SELECT list is not in...MySQL关闭严格模式
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+         SELECT list is not inGROUP BY clause and contains nonaggregated columnMySQL严格模式主要用以下场景
+
+  不支持对not null字段插入null值
+  不支持对自增长字段插入”值
+  不支持text字段有默认值
+
+我们用不到时可以关闭它，在Laravel中可以编辑database.php，关闭严格模式，不使用框架时...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-12-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/">MySQL</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2020/12/04/MySQL%20SELECT%20list%20is%20not%20in...MySQL%E5%85%B3%E9%97%AD%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/'>
             阅读全文
           </a>
         </div>
@@ -560,14 +711,134 @@ Qu...
       <ul class="entry navigation">
         
           <li><a class="flat-box"
+            title="/categories/IDE/" href="/categories/IDE/"
+            id="categoriesIDE"
+            ><div class='name'>IDE</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/IDE/IDEA/" href="/categories/IDE/IDEA/"
+            id="categoriesIDEIDEA"
+            ><div class='name'>IDEA</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/git/" href="/categories/git/"
+            id="categoriesgit"
+            ><div class='name'>git</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" href="/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"
+            id="categoriesE58685E7BD91E7A9BFE9808F"
+            ><div class='name'>内网穿透</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%89%8D%E7%AB%AF/" href="/categories/%E5%89%8D%E7%AB%AF/"
+            id="categoriesE5898DE7ABAF"
+            ><div class='name'>前端</div><div class='badge'>(7)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%89%8D%E7%AB%AF/Hexo/" href="/categories/%E5%89%8D%E7%AB%AF/Hexo/"
+            id="categoriesE5898DE7ABAFHexo"
+            ><div class='name'>Hexo</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/"
+            id="categoriesE5898DE7ABAFJavaScript"
+            ><div class='name'>JavaScript</div><div class='badge'>(6)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Vue/" href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Vue/"
+            id="categoriesE5898DE7ABAFJavaScriptVue"
+            ><div class='name'>Vue</div><div class='badge'>(4)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%89%8D%E7%AB%AF/JavaScript/axios/" href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/axios/"
+            id="categoriesE5898DE7ABAFJavaScriptaxios"
+            ><div class='name'>axios</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
             title="/categories/%E5%90%8E%E7%AB%AF/" href="/categories/%E5%90%8E%E7%AB%AF/"
             id="categoriesE5908EE7ABAF"
-            ><div class='name'>后端</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>后端</div><div class='badge'>(12)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/%E5%90%8E%E7%AB%AF/PHP/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/"
             id="categoriesE5908EE7ABAFPHP"
-            ><div class='name'>PHP</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>PHP</div><div class='badge'>(11)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/PHP/Laravel/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/Laravel/"
+            id="categoriesE5908EE7ABAFPHPLaravel"
+            ><div class='name'>Laravel</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/PHP/Swoole/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/Swoole/"
+            id="categoriesE5908EE7ABAFPHPSwoole"
+            ><div class='name'>Swoole</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/PHP/ThinkPHP/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/ThinkPHP/"
+            id="categoriesE5908EE7ABAFPHPThinkPHP"
+            ><div class='name'>ThinkPHP</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/PHP/%E5%9B%BE%E7%89%87/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/%E5%9B%BE%E7%89%87/"
+            id="categoriesE5908EE7ABAFPHPE59BBEE78987"
+            ><div class='name'>图片</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/PHP/%E7%8E%AF%E5%A2%83/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/%E7%8E%AF%E5%A2%83/"
+            id="categoriesE5908EE7ABAFPHPE78EAFE5A283"
+            ><div class='name'>环境</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/PHP/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"
+            id="categoriesE5908EE7ABAFPHPE8AEBEE8AEA1E6A8A1E5BC8F"
+            ><div class='name'>设计模式</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/Python/" href="/categories/%E5%90%8E%E7%AB%AF/Python/"
+            id="categoriesE5908EE7ABAFPython"
+            ><div class='name'>Python</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
+            id="categoriesE695B0E68DAEE5BA93"
+            ><div class='name'>数据库</div><div class='badge'>(5)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MongoDB/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MongoDB/"
+            id="categoriesE695B0E68DAEE5BA93MongoDB"
+            ><div class='name'>MongoDB</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/"
+            id="categoriesE695B0E68DAEE5BA93MySQL"
+            ><div class='name'>MySQL</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"
+            id="categoriesE69C8DE58AA1E599A8"
+            ><div class='name'>服务器</div><div class='badge'>(9)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/"
+            id="categoriesE69C8DE58AA1E599A8Linux"
+            ><div class='name'>Linux</div><div class='badge'>(5)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/%E5%AE%9D%E5%A1%94/" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/%E5%AE%9D%E5%A1%94/"
+            id="categoriesE69C8DE58AA1E599A8LinuxE5AE9DE5A194"
+            ><div class='name'>宝塔</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Web/" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Web/"
+            id="categoriesE69C8DE58AA1E599A8Web"
+            ><div class='name'>Web</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/git/" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/git/"
+            id="categoriesE69C8DE58AA1E599A8git"
+            ><div class='name'>git</div><div class='badge'>(1)</div></a></li>
         
       </ul>
     </div>
@@ -900,7 +1171,7 @@ var loadCSS = function( href, before, media, attributes ){
   function pjax_valine() {
     if(!document.querySelectorAll("#valine_container")[0])return;
 
-    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~6";
+    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~";
 
     let path = pdata.commentPath;
     if (path.length == 0) {

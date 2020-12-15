@@ -58,7 +58,7 @@
 <body>
   
 
-<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -309,7 +309,7 @@
     <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="half" class='cover-wrapper  featured' style="display: ;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg"></div>
           
@@ -381,6 +381,24 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
     
     
@@ -394,16 +412,19 @@
   
     
     <h2 class="article-title" >
-      <a href="/2020/12/11/hello-world/">
-        Hello World
+      <a href="/2020/11/04/linux%E4%B8%8Ewindows%E4%B8%8B%20%E5%AE%89%E8%A3%85%20ImageMagick%20%E5%8F%8A%E5%85%B6%20php%20imagick%E6%89%A9%E5%B1%95/">
+        linux与windows下 安装 ImageMagick 及其 php imagick扩展
       </a>
     </h2>
   
   <div class='md'>
     
       
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
+        首先要安装两个东西，一个是ImageMagick，另一个是PHP扩展imagick
+Linux安装先安装ImageMagick
+下载ImageMagick安装包1wget http://www.imagemagick.org/download/ImageMagick.tar.gz
+解压1tar -xvfz ImageMagick.tar.gz
+进入目录1cd ImageMagick-7.0....
       
     
   </div>
@@ -411,7 +432,113 @@ Qu...
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time>2020-12-11</time>
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-11-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/">PHP</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/%E7%8E%AF%E5%A2%83/">环境</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2020/11/04/linux%E4%B8%8Ewindows%E4%B8%8B%20%E5%AE%89%E8%A3%85%20ImageMagick%20%E5%8F%8A%E5%85%B6%20php%20imagick%E6%89%A9%E5%B1%95/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/11/04/ThinkPHP%E9%87%8C%E6%97%A0%E6%B3%95%E8%BE%93%E5%87%BA%E5%9B%BE%E7%89%87%20%E8%AE%BE%E7%BD%AE%E5%93%8D%E5%BA%94%E5%A4%B4/">
+        ThinkPHP里无法输出图片 设置响应头
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        今天写了一个PHP生成图片，想用浏览器查看，但是每次打开都是一串乱码，看样子是图片源二进制数据，然后查看了下响应头是text/html，那我明明设置了image/jpeg
+1header(&quot;Content-type&quot;, &quot;image/jpeg&quot;);
+这说明TP默认设置了text/html，查了官方文档，啥也没说，去网上查，才知道TP有个Response...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-11-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/">PHP</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/ThinkPHP/">ThinkPHP</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2020/11/04/ThinkPHP%E9%87%8C%E6%97%A0%E6%B3%95%E8%BE%93%E5%87%BA%E5%9B%BE%E7%89%87%20%E8%AE%BE%E7%BD%AE%E5%93%8D%E5%BA%94%E5%A4%B4/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/05/04/PHP%20%E5%8E%BB%E9%99%A4%20bom%20%E5%A4%B4%EF%BC%8CJSON_decode%20()%20%E8%BF%94%E5%9B%9E%20NULL%EF%BC%8CPHP%20%E6%97%A0%E6%B3%95%E5%AF%B9%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%81%9A%E5%A4%84%E7%90%86/">
+        PHP 去除 bom 头，JSON_decode () 返回 NULL，PHP 无法对字符串做处理
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        今天碰到了一个json字符串无法处理，这是因为这个字符串带有bom头
+去除bom头代码：
+1$rs = trim($rs, &quot;\xEF\xBB\xBF&quot;);
+
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-05-04</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/">PHP</a>
@@ -419,7 +546,375 @@ Qu...
       </div>
       
         <div>
-          <a class='readmore' href='/2020/12/11/hello-world/'>
+          <a class='readmore' href='/2020/05/04/PHP%20%E5%8E%BB%E9%99%A4%20bom%20%E5%A4%B4%EF%BC%8CJSON_decode%20()%20%E8%BF%94%E5%9B%9E%20NULL%EF%BC%8CPHP%20%E6%97%A0%E6%B3%95%E5%AF%B9%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%81%9A%E5%A4%84%E7%90%86/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/05/04/Larvel%20%E6%93%8D%E4%BD%9C%20MongoDB%EF%BC%88%E5%AF%B9%E5%86%85%E5%B5%8C%E6%95%B0%E7%BB%84%E5%A2%9E%E5%88%A0%E6%94%B9%EF%BC%89/">
+        Larvel 操作 MongoDB（对内嵌数组增删改）
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        Larvel操作MongoDB（对内嵌数组增删改）PHP的MongoDB驱动中文文档
+PHP的MongoDB驱动官方文档
+有些细节都没写全，如想学习请阅读官方文档！
+普通的增删改查与mysql驱动操作一样12345678910111213141516171819增$rs = DB::collection(&#x27;集合名字&#x27;)-&gt;insertGetId($param);$r...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-05-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/">PHP</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/Laravel/">Laravel</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MongoDB/">MongoDB</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2020/05/04/Larvel%20%E6%93%8D%E4%BD%9C%20MongoDB%EF%BC%88%E5%AF%B9%E5%86%85%E5%B5%8C%E6%95%B0%E7%BB%84%E5%A2%9E%E5%88%A0%E6%94%B9%EF%BC%89/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/04/04/PHP%E6%89%AB%E6%8F%8F%E5%9B%BE%E7%89%87%E8%BD%AC%E7%82%B9%E9%98%B5%20%E4%BA%8C%E7%BB%B4%E7%A0%81%E8%BD%AC%E7%82%B9%E9%98%B5/">
+        PHP扫描图片转点阵 二维码转点阵
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        1234567891011121314151617181920212223242526272829303132/**    * 图片转点阵（黑白）    * @param string $imgPath    * @return array    */   function imgToLattice(string $imgPath): array   &#123;       $size =...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-04-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/">PHP</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/%E5%9B%BE%E7%89%87/">图片</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2020/04/04/PHP%E6%89%AB%E6%8F%8F%E5%9B%BE%E7%89%87%E8%BD%AC%E7%82%B9%E9%98%B5%20%E4%BA%8C%E7%BB%B4%E7%A0%81%E8%BD%AC%E7%82%B9%E9%98%B5/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/04/04/PHP%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/">
+        PHP设计模式之观察者模式
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        使用场景假设项目经理让我们写了一个登陆接口，咔咔擦擦写完了
+
+第二天让我们加入统计登陆次数，然后在后面加代码
+第三天让我们判断登陆地区，又在后面加代码
+第四天让我们在用户登陆后推送活动，再再后面加代码
+第N天，这个接口已经杂乱到没人想维护了
+
+我们需要让项目保持高内聚低耦合，就可以用到观察者模式（也不是非要，看需求）
+概念观察者，观察者，首先要有个被人观察的角色，这是唯一的，然后会有无数个观...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-04-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/">PHP</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2020/04/04/PHP%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/04/04/PHP7%E5%90%88%E5%B9%B6%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E4%BD%9C%E7%94%A8%E5%92%8C%E5%8C%BA%E5%88%AB/">
+        PHP7合并运算符和条件运算符的作用和区别
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        我们经常要写类似于这种判断代码
+12// 判断是否存在变量$a = isset($b) ? $b : $c;
+12// 判断变量是否为空$a = !empty($b) ? $b : $c;
+PHP7有了新语法糖，进行简化（PHP版本必须大于7）
+12// 判断是否存在变量$a = $b ?? $c; // 等同于 $a = isset($b) ? $b : $c;
+12// 判断变量是否为空...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-04-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/">PHP</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2020/04/04/PHP7%E5%90%88%E5%B9%B6%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E4%BD%9C%E7%94%A8%E5%92%8C%E5%8C%BA%E5%88%AB/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/04/04/ThinkPHP%20%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%20(cli)%20think%20%E8%B0%83%E7%94%A8%20/">
+        ThinkPHP 使用命令行 (cli) think 调用
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        在某些场景里，我们需要在命令行中调用代码
+首先，在application\command目录(目录没有则创建)下新建hello.php：
+12345678910111213141516171819202122232425262728293031323334353637&lt;?phpnamespace app\command;use think\console\Command;use thi...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-04-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/">PHP</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/ThinkPHP/">ThinkPHP</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2020/04/04/ThinkPHP%20%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%20(cli)%20think%20%E8%B0%83%E7%94%A8%20/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/04/04/%E8%A7%A3%E5%86%B3%20win10%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8B%E8%BF%90%E8%A1%8C%20python%20%E5%BC%B9%E5%87%BA%20Windows%20%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97/">
+        Vue 跨域问题解决办法 Vue 配置防止跨域 nginx 重定向防止跨域
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        前几天为了体验新版Edge，更新了win10，然后运行python命令结果跳出了win10商店(黑人问号？？？)于是乎查看了下环境变量，发现配置没有问题，我怀疑win10设置了某个变量导致覆盖了我的python,于是在cmd里运行1where python
+输出：
+12C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps\pyt...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-04-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/Python/">Python</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2020/04/04/%E8%A7%A3%E5%86%B3%20win10%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8B%E8%BF%90%E8%A1%8C%20python%20%E5%BC%B9%E5%87%BA%20Windows%20%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/04/04/PHP%20xml%20%E8%BD%AC%E6%95%B0%E7%BB%84%20%E6%95%B0%E7%BB%84%E8%BD%AC%20xml%20%E6%93%8D%E4%BD%9C/">
+        PHP xml 转数组 数组转 xml 操作
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        
+XML转数组
+直接上代码
+
+12345$path = &#x27;./data.xml&#x27;;$xml = simplexml_load_file($path);foreach($xml-&gt;children() as $child)&#123;	echo $child&#125;
+simplexml_load_file() 函数把 XML 文档载入对象中。| file | 必需...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://learnku.com/'><img src='https://avatars3.githubusercontent.com/u/44698638?s=460&v=4'></a>
+        
+        <time>2020-04-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/PHP/">PHP</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2020/04/04/PHP%20xml%20%E8%BD%AC%E6%95%B0%E7%BB%84%20%E6%95%B0%E7%BB%84%E8%BD%AC%20xml%20%E6%93%8D%E4%BD%9C/'>
             阅读全文
           </a>
         </div>
@@ -435,6 +930,21 @@ Qu...
     
   </section>
   
+    
+      <br>
+      <div class="prev-next">
+        
+        <p class="current">
+          1 / 2
+        </p>
+        
+          <a class="next" rel="next" href="/categories/%E5%90%8E%E7%AB%AF/page/2/">
+            <section class="post next white-box shadow">
+              &nbsp;下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </section>
+          </a>
+        
+      </div>
     
   
 
@@ -522,14 +1032,134 @@ Qu...
       <ul class="entry navigation">
         
           <li><a class="flat-box"
+            title="/categories/IDE/" href="/categories/IDE/"
+            id="categoriesIDE"
+            ><div class='name'>IDE</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/IDE/IDEA/" href="/categories/IDE/IDEA/"
+            id="categoriesIDEIDEA"
+            ><div class='name'>IDEA</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/git/" href="/categories/git/"
+            id="categoriesgit"
+            ><div class='name'>git</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" href="/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"
+            id="categoriesE58685E7BD91E7A9BFE9808F"
+            ><div class='name'>内网穿透</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%89%8D%E7%AB%AF/" href="/categories/%E5%89%8D%E7%AB%AF/"
+            id="categoriesE5898DE7ABAF"
+            ><div class='name'>前端</div><div class='badge'>(7)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%89%8D%E7%AB%AF/Hexo/" href="/categories/%E5%89%8D%E7%AB%AF/Hexo/"
+            id="categoriesE5898DE7ABAFHexo"
+            ><div class='name'>Hexo</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/"
+            id="categoriesE5898DE7ABAFJavaScript"
+            ><div class='name'>JavaScript</div><div class='badge'>(6)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Vue/" href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Vue/"
+            id="categoriesE5898DE7ABAFJavaScriptVue"
+            ><div class='name'>Vue</div><div class='badge'>(4)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%89%8D%E7%AB%AF/JavaScript/axios/" href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/axios/"
+            id="categoriesE5898DE7ABAFJavaScriptaxios"
+            ><div class='name'>axios</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
             title="/categories/%E5%90%8E%E7%AB%AF/" href="/categories/%E5%90%8E%E7%AB%AF/"
             id="categoriesE5908EE7ABAF"
-            ><div class='name'>后端</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>后端</div><div class='badge'>(12)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/%E5%90%8E%E7%AB%AF/PHP/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/"
             id="categoriesE5908EE7ABAFPHP"
-            ><div class='name'>PHP</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>PHP</div><div class='badge'>(11)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/PHP/Laravel/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/Laravel/"
+            id="categoriesE5908EE7ABAFPHPLaravel"
+            ><div class='name'>Laravel</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/PHP/Swoole/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/Swoole/"
+            id="categoriesE5908EE7ABAFPHPSwoole"
+            ><div class='name'>Swoole</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/PHP/ThinkPHP/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/ThinkPHP/"
+            id="categoriesE5908EE7ABAFPHPThinkPHP"
+            ><div class='name'>ThinkPHP</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/PHP/%E5%9B%BE%E7%89%87/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/%E5%9B%BE%E7%89%87/"
+            id="categoriesE5908EE7ABAFPHPE59BBEE78987"
+            ><div class='name'>图片</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/PHP/%E7%8E%AF%E5%A2%83/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/%E7%8E%AF%E5%A2%83/"
+            id="categoriesE5908EE7ABAFPHPE78EAFE5A283"
+            ><div class='name'>环境</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/PHP/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" href="/categories/%E5%90%8E%E7%AB%AF/PHP/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"
+            id="categoriesE5908EE7ABAFPHPE8AEBEE8AEA1E6A8A1E5BC8F"
+            ><div class='name'>设计模式</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E5%90%8E%E7%AB%AF/Python/" href="/categories/%E5%90%8E%E7%AB%AF/Python/"
+            id="categoriesE5908EE7ABAFPython"
+            ><div class='name'>Python</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
+            id="categoriesE695B0E68DAEE5BA93"
+            ><div class='name'>数据库</div><div class='badge'>(5)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MongoDB/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MongoDB/"
+            id="categoriesE695B0E68DAEE5BA93MongoDB"
+            ><div class='name'>MongoDB</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/"
+            id="categoriesE695B0E68DAEE5BA93MySQL"
+            ><div class='name'>MySQL</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"
+            id="categoriesE69C8DE58AA1E599A8"
+            ><div class='name'>服务器</div><div class='badge'>(9)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/"
+            id="categoriesE69C8DE58AA1E599A8Linux"
+            ><div class='name'>Linux</div><div class='badge'>(5)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/%E5%AE%9D%E5%A1%94/" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Linux/%E5%AE%9D%E5%A1%94/"
+            id="categoriesE69C8DE58AA1E599A8LinuxE5AE9DE5A194"
+            ><div class='name'>宝塔</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Web/" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Web/"
+            id="categoriesE69C8DE58AA1E599A8Web"
+            ><div class='name'>Web</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/git/" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/git/"
+            id="categoriesE69C8DE58AA1E599A8git"
+            ><div class='name'>git</div><div class='badge'>(1)</div></a></li>
         
       </ul>
     </div>
@@ -564,7 +1194,7 @@ Qu...
 
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.add("show");
+  l_header.classList.remove("show");
   
 </script>
 
@@ -862,7 +1492,7 @@ var loadCSS = function( href, before, media, attributes ){
   function pjax_valine() {
     if(!document.querySelectorAll("#valine_container")[0])return;
 
-    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~6";
+    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~";
 
     let path = pdata.commentPath;
     if (path.length == 0) {

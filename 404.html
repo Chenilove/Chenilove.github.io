@@ -305,7 +305,7 @@
     <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper page dock' style="display: ;">
+        <div id="half" class='cover-wrapper page featured' style="display: ;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg"></div>
           
@@ -740,7 +740,7 @@ var loadCSS = function( href, before, media, attributes ){
   function pjax_valine() {
     if(!document.querySelectorAll("#valine_container")[0])return;
 
-    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~6";
+    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~";
 
     let path = pdata.commentPath;
     if (path.length == 0) {
